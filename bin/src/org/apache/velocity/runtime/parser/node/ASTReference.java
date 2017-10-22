@@ -293,40 +293,9 @@ public class ASTReference extends SimpleNode
                     result = EventHandlerUtil.invalidGetMethod(rsvc, context,
                             getDollarBang() + rootString, previousResult, null, uberInfo);
                 }
-                else
-                {
-                    // StringBuffer name = new StringBuffer(getDollarBang()).append(rootString);
-                    // for (int i = 0; i <= failedChild; i++)
-                    // {
-                    //     Node node = jjtGetChild(i);
-                    //     if (node instanceof ASTMethod)
-                    //     {
-                    //         name.append(".").append(((ASTMethod) node).getMethodName()).append("()");
-                    //     }
-                    //     else
-                    //     {
-                    //         name.append(".").append(node.getFirstToken().image);
-                    //     }
-                    // }
-                    //
-                    // if (jjtGetChild(failedChild) instanceof ASTMethod)
-                    // {
-                    //     String methodName = ((ASTMethod) jjtGetChild(failedChild)).getMethodName();
-                    //     result = EventHandlerUtil.invalidMethod(rsvc, context,
-                    //             name.toString(), previousResult, methodName, uberInfo);
-                    // }
-                    // else
-                    // {
-                    //     String property = jjtGetChild(failedChild).getFirstToken().image;
-                    //     result = EventHandlerUtil.invalidGetMethod(rsvc, context,
-                    //             name.toString(), previousResult, property, uberInfo);
-                    // }
-                    result = "";
-                }
-
             }
 
-            return result;
+            return "";
         }
         catch(MethodInvocationException mie)
         {

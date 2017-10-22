@@ -32,13 +32,13 @@ public interface TemplateTestBase
      * Directory relative to the distribution root, where the
      * values to compare test results to are stored.
      */
-    public static final String TEST_COMPARE_DIR = "c:/Repos/personal/velocity-1.7/test";
+    public static final String TEST_COMPARE_DIR = "C:/repos/personal/velocity-1.7/test";
 
     /**
      * Directory relative to the distribution root, where the
      * test cases should put their output
      */
-    public static final String TEST_RESULT_DIR = "c:/Repos/personal/velocity-1.7/bin/test";
+    public static final String TEST_RESULT_DIR = "C:/repos/personal/velocity-1.7/bin/test";
 
 
     /**
